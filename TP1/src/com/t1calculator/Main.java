@@ -1,6 +1,6 @@
-package com.T1calculator;
+package com.t1calculator;
 
-import java.util.Scanner;
+
 /*
 the above code import a package.
 package are library which is a mechanism to encapsulate a group
@@ -50,9 +50,18 @@ java API eg. java.lang, java.io, java.util etc
 public class Main {
 
     public static void main(String[] args) {
-	System.out.println("name pleas :");
-    Scanner input  = new Scanner(System.in);
-    String name = input.nextLine();
-    System.out.println(name);
+        SimpleCalculator calculate = new SimpleCalculator();
+        calculate.setFirstNumber(0);
+        calculate.setSecondNumber(2);
+
+        System.out.println("1st Number = "+calculate.isFirstNumber());
+        System.out.println("2nd Number = "+calculate.isSecondNumber());
+
+        System.out.println("Operation outcome");
+        System.out.println(calculate.isFirstNumber()+" + "+calculate.isSecondNumber()+" = "+ calculate.getAdditionResult());
+        System.out.println(calculate.isFirstNumber()+" - "+calculate.isSecondNumber()+" = "+ calculate.getSoustractionResult());
+        System.out.println(calculate.isFirstNumber()+" * "+calculate.isSecondNumber()+" = "+ calculate.getMultiplicatinResult());
+        System.out.println(calculate.isFirstNumber()+" / "+calculate.isSecondNumber()+" = "+ calculate.getDivisionResult());
+
     }
 }

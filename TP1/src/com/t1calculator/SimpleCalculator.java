@@ -17,11 +17,19 @@ default modifier:       the code is only accessible in the same package
 Non-Access Modifiers - do not control access level, but provides other functionality
 ------------------------------------
 -final	    The class cannot be inherited by other classes also final Attributes and methods cannot be overridden/modified
--static	    Attributes and methods belongs to the class, rather than an object
+-static	    Attributes and methods belongs to the class, rather than an object that is you don't need to  create an object
+to access it.
 -abstract    The class cannot be used to create objects (To access an abstract class, it must be inherited from another class
 also abstract Attributes and methods Can only be used in an abstract class, and can only be used on methods. The method does not have a body, for example abstract void run();. The body is provided by the subclass (inherited from).
  -
  */
+
+/*
+Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+declare class variables/attributes as private
+provide public get and set methods to access and update the value of a private variable
+The get method returns the variable value, and the set method sets the value.
+* */
 
 public class SimpleCalculator {
     private double firstNumber ;
